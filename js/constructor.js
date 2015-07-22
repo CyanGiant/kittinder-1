@@ -59,3 +59,50 @@ function randomIndex(left, right) {
   }
 }
 randomIndex();
+
+            var barData = {
+                labels : ["Kitten 1","Kitten 2","Kitten 3","Kitten 4","Kitten 5","Kitten 6", "Kitten 7", "Kitten 8", "Kitten 9", "Kitten 10", "Kitten 11", "Kitten 12", "Kitten 13", "Kitten14"],
+                datasets :[
+                    {
+                    fillColor : "#48A497",
+                    strokeColor : "#48A4D1",
+                    data :[]
+                 },
+
+                ]
+               }
+            // get bar chart canvas
+            var kittyChart = document.getElementById("kittyChart").getContext("2d");
+            // draw bar chart
+            new Chart(kittyChart).Bar(barData);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var renderChart = function() {
+//   var barData = {
+//       labels : ["1","2","3","4","5","6", "7", "8", "9", "10", "11", "12", "13", "14"],
+//       datasets : [
+//           {
+//               fillColor : "#48A497",
+//               strokeColor : "#48A4D1",
+//               data : play.kitty
+//           },
+//       ]
+//   }
+//   // get bar chart canvas
+//   var cats = $("#cats")[0].getContext("2d");
+//   // draw bar chart
+//   new Chart(kittyChart).Bar(barData);
+// };
