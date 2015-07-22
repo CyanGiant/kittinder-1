@@ -59,7 +59,3 @@ function randomIndex(left, right) {
   }
 }
 randomIndex();
-
-
-
-
